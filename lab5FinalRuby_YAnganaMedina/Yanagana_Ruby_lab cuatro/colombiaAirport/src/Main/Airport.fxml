@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="Main.AirportController">
+   <center>
+      <BorderPane prefHeight="410.0" prefWidth="551.0" BorderPane.alignment="CENTER">
+         <top>
+            <Pane prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+               <children>
+                  <TableView layoutX="41.0" layoutY="126.0" prefHeight="200.0" prefWidth="453.0">
+                    <columns>
+                      <TableColumn fx:id="columnas" prefWidth="75.0" text="date" />
+                      <TableColumn prefWidth="75.0" text="time" />
+                        <TableColumn prefWidth="75.0" text="airline" />
+                        <TableColumn prefWidth="75.0" text="flight" />
+                        <TableColumn prefWidth="75.0" text="To" />
+                        <TableColumn prefWidth="75.0" text="gate" />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="answers" layoutX="41.0" layoutY="365.0" prefHeight="25.0" prefWidth="230.0" text="How many flight do you  want to see?" />
+                  <Button fx:id="generate" layoutX="381.0" layoutY="365.0" mnemonicParsing="false" text="generateFlight" />
+                  <TextField fx:id="numero" layoutX="289.0" layoutY="365.0" prefHeight="16.0" prefWidth="72.0" />
+                  <TextField fx:id="departures" layoutX="251.0" layoutY="49.0" text="departures" />
+                  <TextField fx:id="time" layoutX="8.0" layoutY="14.0" prefHeight="25.0" prefWidth="66.0" text="time" />
+                  <ImageView fx:id="imagen" fitHeight="63.0" fitWidth="232.0" layoutX="120.0" layoutY="30.0" nodeOrientation="RIGHT_TO_LEFT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../../../../../Pictures/h.jpg" />
+                     </image>
+                  </ImageView>
+               </children>
+            </Pane>
+         </top>
+      </BorderPane>
+   </center>
+</BorderPane>
